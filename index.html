@@ -1,4 +1,3 @@
-
 <html>
 
 <head>
@@ -6,11 +5,11 @@
 
   <style>
     body {
-      background-color: rgb(255, 255, 255);
+      background-color: lightblue;
     }
 
     nav {
-      background-color: rgb(96, 109, 178);
+      background-color: white;
       padding: 15px;
       margin-bottom: 20px;
     }
@@ -21,6 +20,29 @@
       color: black;
       font-weight: bold;
     }
+
+    /* Dropdown */
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 120px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      margin: 0;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
   </style>
 </head>
 
@@ -28,9 +50,20 @@
 
   <!-- Navigatiebalk -->
   <nav style="text-align:center">
+
     <a href="pagina1.html">Home</a>
-    <a href="pagina2.html">Informatica</a>
+
+    <div class="dropdown">
+      <a href="pagina2.html">Informatica</a>
+
+      <div class="dropdown-content">
+        <a href="Binairstelsel.html">Binairstelsel</a>
+        <a href="css.html">CSS</a>
+      </div>
+    </div>
+
     <a href="pagina3.html">AI</a>
+
   </nav>
 
   <h1>Over mij</h1>
@@ -68,4 +101,3 @@
 </body>
 
 </html>
-```
