@@ -1,4 +1,4 @@
-```css
+
 body {
   background-color: lightblue;
 }
@@ -39,4 +39,3 @@ nav a {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-```
