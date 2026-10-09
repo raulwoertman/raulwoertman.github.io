@@ -1,0 +1,42 @@
+```css
+body {
+  background-color: lightblue;
+}
+
+nav {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Dropdown */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 120px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+```
