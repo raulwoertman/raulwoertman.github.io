@@ -1,7 +1,7 @@
 /* ========================================== */
-/* ALGEMENE STIJL EN LETTERTYPEN              */
+/* 1. LETTERTYPEN EN BASISINSTELLINGEN       */
 /* ========================================== */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap');
 
 * {
   box-sizing: border-box;
@@ -11,47 +11,97 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f7f6f2; /* Lichte beige/grijze achtergrond zoals op het voorbeeld */
+  background-color: #f7f6f2; /* Lichte beige/grijze achtergrond */
   color: #333333;
 }
 
 /* ========================================== */
-/* NAVIGATIEBALK                              */
+/* 2. BOVENBALK & NAVIGATIE                   */
 /* ========================================== */
-nav {
+header {
   background-color: #f7f6f2;
-  padding: 25px;
-  text-align: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid #eae8e1;
 }
 
-nav a {
-  margin: 0 15px;
+/* De menubalk met het logo in het midden */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links a {
   text-decoration: none;
-  color: #222222;
+  color: #333333;
+  font-size: 14px;
   font-weight: 400;
-  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
 }
 
-/* Dropdown menu opmaak */
+.nav-links a:hover {
+  color: #3f4acb;
+}
+
+/* Centraal Logo (stijl van Ninke van der Leck) */
+.logo {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  text-decoration: none;
+  color: #111111;
+}
+
+.logo h1 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  text-transform: lowercase;
+}
+
+.logo span {
+  display: block;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 4px;
+  font-family: 'Montserrat', sans-serif;
+  color: #666666;
+}
+
+/* Dropdown Menu voor Informatica */
 .dropdown {
-  display: inline-block;
   position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
+  top: 100%;
+  left: 0;
   background-color: #ffffff;
-  min-width: 150px;
+  min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-  z-index: 10;
+  padding: 10px 0;
+  z-index: 100;
+  border-radius: 4px;
 }
 
 .dropdown-content a {
   display: block;
-  padding: 10px;
-  margin: 0;
-  text-align: left;
+  padding: 8px 16px;
+  font-size: 13px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -59,34 +109,38 @@ nav a {
 }
 
 /* ========================================== */
-/* HERO / OVER MIJ SECTIE (DONKERE BALK)      */
+/* 3. HERO BANNER (DONKERE SECTIE MET FOTO)   */
 /* ========================================== */
 .hero {
-  background-color: #111111; /* Donkere achtergrond net als op de afbeelding */
+  background-color: #111111; /* Donkere achtergrond */
   color: #ffffff;
   padding: 60px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 480px;
 }
 
 .hero-container {
   display: flex;
   max-width: 1000px;
   width: 100%;
-  gap: 40px;
+  gap: 50px;
   align-items: center;
 }
 
 .hero-image {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 400px;
-  border-radius: 4px;
-  display: block;
+  max-width: 380px;
+  height: auto;
+  border-radius: 2px;
+  object-fit: cover;
 }
 
 .hero-content {
@@ -94,52 +148,70 @@ nav a {
 }
 
 .hero-title {
-  font-family: 'Cinzel', serif; /* Stijlvol lettertype voor de grote titel */
-  font-size: 42px;
+  font-family: 'Cinzel', serif;
+  font-size: 46px;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  line-height: 1.2;
+  margin-bottom: 25px;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .hero-text {
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.8;
   color: #dddddd;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  font-weight: 300;
 }
 
+/* Blauwe knop uit het voorbeeld */
 .btn-primary {
   display: inline-block;
-  background-color: #3f4acb; /* Blauwe knop */
+  background-color: #3f4acb;
   color: #ffffff;
-  padding: 12px 28px;
+  padding: 14px 32px;
   text-decoration: none;
-  font-weight: 600;
   font-size: 12px;
-  letter-spacing: 1px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2f39a3;
 }
 
 /* ========================================== */
-/* INHOUD ONDER DE HERO SECTIE                */
+/* 4. INHOUD IN HET LICHTE DEEL               */
 /* ========================================== */
-.content-container {
+.main-content {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 50px auto;
   padding: 0 20px;
 }
 
-.content-container h2 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+.main-content h1, .main-content h2 {
+  font-family: 'Cinzel', serif;
+  margin-bottom: 15px;
 }
 
-.content-container ul {
+.main-content p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.main-content ul {
   margin-left: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  line-height: 1.8;
 }
 
 iframe {
   max-width: 100%;
   border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-top: 15px;
 }
