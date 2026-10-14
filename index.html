@@ -1,8 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="nl">
 
 <head>
-  <title>Home</title>
-
+  <meta charset="UTF-8">
+  <title>Home - Raul Woertman</title>
   <link rel="stylesheet" href="Opmaak.css">
 </head>
 
@@ -10,12 +11,10 @@
 
   <!-- Navigatiebalk -->
   <nav>
-
     <a href="pagina1.html">Home</a>
 
     <div class="dropdown">
       <a href="pagina2.html">Informatica</a>
-
       <div class="dropdown-content">
         <a href="Binairstelsel.html">Binairstelsel</a>
         <a href="css.html">CSS</a>
@@ -23,42 +22,50 @@
     </div>
 
     <a href="pagina3.html">AI</a>
-
   </nav>
 
-  <h1>Over mij</h1>
+  <!-- Donkere banner in de stijl van de foto uit het voorbeeld -->
+  <section class="hero">
+    <div class="hero-container">
+      
+      <!-- Afbeelding aan de linkerkant -->
+      <div class="hero-image">
+        <img src="pasfoto.jpg" alt="Raul Woertman">
+      </div>
 
-  <h2>
-    Ik ben Raul Woertman, 15 jaar oud en woon in Voorschoten.
-    Ik woon thuis met mijn 2 broers en mijn ouders.
-    Als ik niet op school zit doe ik een aantal dingen zoals
-    afspreken met mijn vrienden.
-    Ook vind ik het leuk om te voetballen, ik zit al vanaf mijn
-    6e op voetbal bij Voorschoten 97'.
-    Dat doe ik nog steeds, ook vind ik het leuk om te gamen met vrienden.
-  </h2>
+      <!-- Tekst aan de rechterkant -->
+      <div class="hero-content">
+        <h1 class="hero-title">Mijn<br>Verhaal</h1>
+        <p class="hero-text">
+          Ik ben Raul Woertman, 15 jaar oud en woon in Voorschoten. 
+          Ik woon thuis met mijn 2 broers en mijn ouders. 
+          Als ik niet op school zit spreek ik af met vrienden, speel ik voetbal bij Voorschoten '97 of ga ik lekker gamen.
+        </p>
+        <a href="pagina2.html" class="btn-primary">Lees verder</a>
+      </div>
 
-  <h3>Dit is Header 3</h3>
+    </div>
+  </section>
 
-  <h2>lijsten maken</h2>
+  <!-- Overige inhoud onder de donkere balk -->
+  <main class="content-container">
+    <h2>Lijsten maken</h2>
+    <p>Je kunt allerlei opmaak toepassen, zoals:</p>
+    <ul>
+      <li>vet;</li>
+      <li>cursief;</li>
+      <li>onderstreept;</li>
+    </ul>
 
-  Je kunt allerlei opmaak toepassen, zoals:
-
-  <ul>
-    <li>vet;</li>
-    <li>cursief;</li>
-    <li>onderstreept;</li>
-  </ul>
-
-  <iframe
-    src="https://games.penjee.com/binary-bonanza/game.php"
-    width="700"
-    height="500"
-    frameborder="no"
-    scrolling="no">
-  </iframe>
+    <!-- Embedded minigame -->
+    <iframe
+      src="https://games.penjee.com/binary-bonanza/game.php"
+      width="700"
+      height="500"
+      scrolling="no">
+    </iframe>
+  </main>
 
 </body>
 
 </html>
-

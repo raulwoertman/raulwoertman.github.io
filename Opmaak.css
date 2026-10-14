@@ -1,23 +1,38 @@
-/*opmaak van de body*/
-body {
-  background-color: rgb(163, 204, 218);
+/* ========================================== */
+/* ALGEMENE STIJL EN LETTERTYPEN              */
+/* ========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f7f6f2; /* Lichte beige/grijze achtergrond zoals op het voorbeeld */
+  color: #333333;
+}
+
+/* ========================================== */
+/* NAVIGATIEBALK                              */
+/* ========================================== */
 nav {
-  background-color: rgb(246, 243, 243);
-  padding: 15px;
-  margin-bottom: 20px;
+  background-color: #f7f6f2;
+  padding: 25px;
   text-align: center;
 }
 
 nav a {
-  margin-right: 20px;
+  margin: 0 15px;
   text-decoration: none;
-  color: black;
-  font-weight: bold;
+  color: #222222;
+  font-weight: 400;
+  font-size: 15px;
 }
 
-/* Dropdown */
+/* Dropdown menu opmaak */
 .dropdown {
   display: inline-block;
   position: relative;
@@ -26,16 +41,105 @@ nav a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
-  min-width: 120px;
+  background-color: #ffffff;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  z-index: 10;
 }
 
 .dropdown-content a {
   display: block;
   padding: 10px;
   margin: 0;
+  text-align: left;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* ========================================== */
+/* HERO / OVER MIJ SECTIE (DONKERE BALK)      */
+/* ========================================== */
+.hero {
+  background-color: #111111; /* Donkere achtergrond net als op de afbeelding */
+  color: #ffffff;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 4px;
+  display: block;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-title {
+  font-family: 'Cinzel', serif; /* Stijlvol lettertype voor de grote titel */
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #dddddd;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #3f4acb; /* Blauwe knop */
+  color: #ffffff;
+  padding: 12px 28px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ========================================== */
+/* INHOUD ONDER DE HERO SECTIE                */
+/* ========================================== */
+.content-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.content-container h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.content-container ul {
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+
+iframe {
+  max-width: 100%;
+  border: none;
 }
