@@ -2,18 +2,25 @@
 <html lang="nl">
 
 <head>
+  <!-- Bepaalt de tekenset voor speciale tekens zoals ë en é -->
   <meta charset="UTF-8">
+  <!-- Zorgt ervoor dat de pagina goed schaalt op mobiel en desktop -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- De titel die bovenin het tabblad van de browser staat -->
   <title>Binairstelsel</title>
+  <!-- Koppeling naar het centrale CSS-bestand voor de vormgeving -->
   <link rel="stylesheet" href="Opmaak.css">
 </head>
 
 <body>
 
+  <!-- Bovenste balk met het logo en de navigatieknoppen -->
   <header>
     <nav>
+      <!-- Linkerzijde van het menu -->
       <ul class="nav-links">
         <li><a href="pagina1.html">home</a></li>
+        <!-- Uitklapmenu (dropdown) voor het vak Informatica -->
         <li class="dropdown">
           <a href="pagina2.html">informatica</a>
           <div class="dropdown-content">
@@ -24,11 +31,13 @@
         </li>
       </ul>
 
+      <!-- Centraal logo in het midden van de header -->
       <a href="pagina1.html" class="logo">
         <h1>raul<br>woertman</h1>
         <span>scholier & sporter</span>
       </a>
 
+      <!-- Rechterzijde van het menu -->
       <ul class="nav-links">
         <li><a href="pagina3.html">AI</a></li>
         <li><a href="over-mij.html">over mij</a></li>
@@ -36,23 +45,31 @@
     </nav>
   </header>
 
+  <!-- Hoofdinhoud van de pagina Binairstelsel -->
   <main class="main-content">
+    <!-- Hoofdtitel van het artikel -->
     <h1>Het Binairstelsel</h1>
+    
+    <!-- Uitlegtekst over hoe computers met 0 en 1 werken -->
     <p>
-      Computers begrijpen geen gewone getallen zoals wij die kennen (0 t/m 9). Computers werken met het <strong>binairstelsel</strong> (tweetallig stelsel). 
+      Computers begrijpen geen gewone getallen zoals wij die kennen (0 t/m 9). Computers werken met het <strong>binairstelsel</strong> (tweetallig stelsel).
       Dit betekent dat ze alleen rekenen met de cijfers <strong>0</strong> (uit/geen stroom) en <strong>1</strong> (aan/wel stroom).
     </p>
 
+    <!-- Subkop voor de minigame -->
     <h2>Binary Bonanza Game</h2>
     <p>Klik op onderstaande afbeelding om de Binary Bonanza game te spelen en te oefenen met binair rekenen!</p>
 
+    <!-- Klikbare afbeelding die naar de externe game leidt op een nieuw tabblad -->
     <div class="game-link-container">
       <a href="https://games.penjee.com/binary-bonanza/" target="_blank">
         <img src="https://games.penjee.com/binary-bonanza/thumb.png" alt="Speel Binary Bonanza" class="game-banner">
       </a>
     </div>
 
+    <!-- Subkop voor het ingesloten spel -->
     <h2>Direct Spelen:</h2>
+    <!-- Iframe laadt de game rechtstreeks op jouw eigen website -->
     <iframe
       src="https://games.penjee.com/binary-bonanza/game.php"
       width="700"
